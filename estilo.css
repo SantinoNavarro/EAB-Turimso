@@ -6,10 +6,8 @@ body{
 }
 .container__mundo .imagen__mundo{
 	position: absolute;
-	outline: 5px solid yellow;
-	height: calc(100% - 70px);
-	width: 100vw;
-  	backdrop-filter: blur(5px;);
+	height: 89.5vh;
+	object-fit: cover;
   	z-index: -50
 }
 .container__logo img{
@@ -52,19 +50,16 @@ body{
 .nav__responsive--ul{
 	display: none;
 }
-h1{
+.contenedor__titulo{
 	position: absolute;
-	text-align: center;
 	top: 15vh;
-	padding: 15px;
+	color: #16BDB6;
 	text-shadow: 0px 0px .5px black;
-	background: -o-linear-gradient(90deg, yellow 10%, orange 90%);
 }
-@media screen only and(max-width: 208px){
+@media screen only and(max-width: 442px){
 	.contenedor__titulo h1{
 		font-size: 2.8vw;
 		text-align: center;
-		color: #16BDB6;
 		text-shadow: 1.5px 1.5px black;
 	}
 }
@@ -93,6 +88,13 @@ h1{
 @media only screen and (max-width: 442px){
 	.menu{
 		display: none;
+	}
+	.container__mundo .imagen__mundo{
+	position: absolute;
+	outline: 5px solid yellow;
+	object-fit: cover;
+  	backdrop-filter: blur(5px;);
+  	z-index: -50
 	}
 	.container__logo img{
 	position: fixed;
@@ -145,15 +147,6 @@ h1{
 		top: -27px;
 	}
 }
-
-/*.navegador{
-	position: sticky;
-	height: 60px;
-	background: linear-gradient(lightblue, #fff);
-	border: 2px solid lightgrey;
-
-}*/
-
 /*.buscar{
 	position: fixed;
 	top: 15px;
@@ -171,12 +164,4 @@ h1{
 	position: absolute;
 	left: 833px;
 	top: 15px;
-}*/
-/*#menu{
-	position: fixed;
-	top: 15px;
-	left: 1100px;
-	background: linear-gradient(lightblue, #fff);
-	list-style: none;
-	border: .5px solid lightblue;
 }*/
