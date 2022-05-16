@@ -94,7 +94,6 @@ body{
 	}
 	.container__mundo .imagen__mundo{
 	position: absolute;
-	outline: 5px solid yellow;
 	object-fit: cover;
   	backdrop-filter: blur(5px;);
   	z-index: -50
